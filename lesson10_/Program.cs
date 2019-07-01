@@ -58,6 +58,18 @@ namespace lesson10_
         }
         class Bas : Vehicle
         {
+            public Bas (string model, double tonnage, int distance)
+            {
+                this.Model = model;
+                this.Tonnage = tonnage;
+                this.Distance = distance;
+                
+            }
+            public Bas()
+            {
+                this.Model = model;
+                
+            }
 
             public override string ToString()
             {
@@ -79,6 +91,8 @@ namespace lesson10_
 
                 Bas bas = new Bas();
                 Console.WriteLine(bas);
+                Bas bas1 = new Bas("Эталон", 3, 100);
+                Console.WriteLine(bas1);
             }
         }
     }
